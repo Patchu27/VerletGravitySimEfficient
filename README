@@ -1,0 +1,9 @@
+g++ --std=c++11 -c VerletGravitySimEfficient.cpp -I/usr/include/SFML-2.6.1/include && g++ VerletGravitySimEfficient.o -o App -L/usr/include/SFML-2.6.1/lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio && export LD_LIBRARY_PATH=/usr/include/SFML-2.6.1/lib && ./App
+
+
+
+just compile and run this and watch as the Verlet simulation takes some "orbees" and makes them collide. 
+
+If you'd like to make the balls more squishy, change the "squishval" to anything less than 1.f for a more forgiving collision resolution
+
+To be clear, this is an N body simulation with collisions, so it is a bit slow
